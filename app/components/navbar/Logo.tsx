@@ -9,7 +9,7 @@ const Logo = () => {
     return (
         <Image
             onClick={() => router.push('/')}
-            className="block cursor-pointer"
+            className="block h-[3.2rem] w-[3.2rem]  sm:h-[4rem] sm:w-[4rem] cursor-pointer"
             src="/images/logo.webp"
             height="60"
             width="60"

@@ -11,7 +11,7 @@ const Navbar = () => {
     const [activeNav, setActiveNav] = useState(false)
     const [activeSearch, setActiveSearch] = useState(false)
     return (
-        <nav className="w-full px-6 md:px-12 fixed items-start lg:items-center py-6 bg-white z-20 flex justify-between">
+        <nav className="w-full fixed px-6 md:px-12   items-start lg:items-center py-6 bg-white z-30 flex justify-between">
             <Logo />
             <ul className="lg:flex hidden gap-8 xl:gap-12 items-center transition-all  text-[0.9rem] uppercase text-black/90">
                 <li className="relative">
@@ -56,7 +56,7 @@ const Navbar = () => {
                     </a>
                 </li>
             </ul>
-            <div className="flex gap-4 items-start lg:relative">
+            <div className="flex gap-4 items-center justify-between lg:relative">
                 <div className="flex flex-col-reverse flex-1 w-full items-end gap-4">
                     {activeSearch && <Search />}
 
@@ -67,8 +67,7 @@ const Navbar = () => {
                         <HiSearch className="w-5 h-5 cursor-pointer fill-white/90 group-hover:fill-white" />
                     </button>
                 </div>
-
-                <div className="flex items-start flex-col lg:flex-row gap-4">
+                <div className=" flex gap-3 md:gap-4 items-center">
                     <MobileNavigation
                         setActiveNav={setActiveNav}
                         activeNav={activeNav}

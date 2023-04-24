@@ -11,7 +11,7 @@ module.exports = {
                 primaryWhite: '#FFFFFF',
                 primaryRoseGold: '#B76E79',
                 secondaryLightPink: '#FFE4E1',
-                secondaryDarkRed: '#8B0000',
+                secondaryDarkRed: '#8A2E38',
                 tertiaryLightPurple: '#e6e6fa',
                 tertiaryYellow: '#fed7aa',
             },

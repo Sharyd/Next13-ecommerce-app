@@ -12,7 +12,7 @@ interface Props {
 
 const MobileNavigation = ({ setActiveNav, activeNav }: Props) => {
     return (
-        <div className="flex  lg:hidden z-50 justify-between items-center h-full w-full">
+        <div className="flex  lg:hidden z-50 justify-between items-center">
             {activeNav && <ScrollbarNone />}
             {!activeNav && (
                 <button
@@ -28,7 +28,7 @@ const MobileNavigation = ({ setActiveNav, activeNav }: Props) => {
                     activeNav
                         ? 'translate-x-0 opacity-100'
                         : 'translate-x-full opacity-0 '
-                } right-0 overflow-x-hidden transition-all w-[50%] absolute top-0 ease-in-out duration-300 bg-white  z-50`}
+                } right-0 overflow-x-hidden transition-all w-[66%] absolute top-0 ease-in-out duration-300 bg-white  z-50`}
             >
                 <button
                     onClick={() => setActiveNav(false)}

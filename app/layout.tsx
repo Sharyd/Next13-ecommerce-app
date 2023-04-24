@@ -1,3 +1,4 @@
+import Hero from './components/home/products/BestProductsSection'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
@@ -19,10 +20,13 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html className={`${montserrat.className} `} lang="en">
-            <body className={`overflow-x-hidden min-h-screen bg-primaryWhite`}>
+        <html lang="en">
+            <body
+                className={`min-h-screen bg-primaryWhite ${montserrat.className}`}
+            >
                 <Navbar />
-                <div className="mx-8 md:mx-24 xl:mx-48">{children}</div>
+
+                <div>{children}</div>
             </body>
         </html>
     )
